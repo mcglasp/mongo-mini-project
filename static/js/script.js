@@ -40,5 +40,30 @@
     }
 });
 
+let shape;
 
-  
+
+
+
+
+function identifyLayoutShape() {
+    let changeCode = document.getElementById("code").textContent;
+    switch (changeCode) {
+        case "FF":
+            shape = 2
+        case "FA":
+            shape = 1
+    }
+    hello()
+    return shape;
+    
+}
+
+function hello() {
+    document.getElementById("hello").innerHTML = shape;
+}
+
+
+
+identifyLayoutShape()
+
